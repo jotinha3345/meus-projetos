@@ -1,0 +1,75 @@
+SUPER TRUNFO
+#include <stdio.h>
+
+int main() {
+    char estado[3], estado2[3];
+    char codigo_estado[4], codigo_estado2[4];
+    int populacao, populacao2, pontos_turisticos, pontos_turisticos2;
+    float area, area2, PIB, PIB2;
+    char nome_cidade[21], nome_cidade2[21];
+
+    // Coleta de dados do primeiro estado
+    printf("Digite seu estado (ex: SP, RJ):\n");
+    scanf("%2s", estado);
+
+    printf("Digite o codigo do estado:\n");
+    scanf("%3s", codigo_estado);
+
+    printf("Qual o nome da cidade:\n");
+    scanf("%20s", nome_cidade);
+
+    printf("Qual a area do estado:\n");
+    scanf("%f", &area);
+
+    printf("Digite a populacao do estado:\n");
+    scanf("%d", &populacao);
+
+    printf("Digite quantos pontos turisticos ha:\n");
+    scanf("%d", &pontos_turisticos);
+
+    printf("Qual o PIB do estado:\n");
+    scanf("%f", &PIB);
+
+    // Coleta de dados do segundo estado
+    printf("\nDigite seu segundo estado (ex: SP, RJ):\n");
+    scanf("%2s", estado2);
+
+    printf("Digite o codigo do segundo estado:\n");
+    scanf("%3s", codigo_estado2);
+
+    printf("Qual o nome da cidade:\n");
+    scanf("%20s", nome_cidade2);
+
+    printf("Qual a area do estado:\n");
+    scanf("%f", &area2);
+
+    printf("Digite a populacao do estado:\n");
+    scanf("%d", &populacao2);
+
+    printf("Digite quantos pontos turisticos ha:\n");
+    scanf("%d", &pontos_turisticos2);
+
+    printf("Qual o PIB do estado:\n");
+    scanf("%f", &PIB2);
+
+    // Exibição dos dados
+    printf("\nCarta 1:\n");
+    printf("Estado: %s\n", estado);
+    printf("- Codigo do estado: %s\n", codigo_estado);
+    printf("- Nome da cidade: %s\n", nome_cidade);
+    printf("- Populacao: %d\n", populacao);
+    printf("- Area: %.2f\n", area);
+    printf("- PIB: %.2f\n", PIB);
+    printf("- Pontos turisticos: %d\n", pontos_turisticos);
+
+    printf("\nCarta 2:\n");
+    printf("Estado: %s\n", estado2);
+    printf("- Codigo do estado: %s\n", codigo_estado2);
+    printf("- Nome da cidade: %s\n", nome_cidade2);
+    printf("- Populacao: %d\n", populacao2);
+    printf("- Area: %.2f\n", area2);
+    printf("- PIB: %.2f\n", PIB2);
+    printf("- Pontos turisticos: %d\n", pontos_turisticos2);
+
+    return 0;
+}
